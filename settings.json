@@ -1,5 +1,5 @@
 {
     "database_name": "FSE",
-    "database_url": "mongodb+srv://fse:fse@fse-sa4-7rezl.mongodb.net/ESN?retryWrites=true&w=majority",
+    "database_url": "mongodb://heroku_75d4bglh:c5mvm2juslcmg76kgfaihtp2cu@ds135128.mlab.com:35128/heroku_75d4bglh",
     "jwt_secret": "fse-test-secret"
 }
