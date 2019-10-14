@@ -1,0 +1,5 @@
+{
+    "database_name": "FSE",
+    "database_url": "mongodb+srv://fse:fse@fse-sa4-7rezl.mongodb.net/ESN?retryWrites=true&w=majority",
+    "jwt_secret": "fse-test-secret"
+}

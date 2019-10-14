@@ -1,0 +1,7 @@
+{
+    "LENGTH_ERROR": "The username/password did not meet the minimum requirement.",
+    "NAME_ERROR": "This username is not allowed.",
+    "PASSWORD_ERROR": "Please re-enter your password.",
+    "AGREEMENT_ERROR": "You must agree to the acknowledgement to make an account.",
+    "TOKEN_ERROR": "Error observed with the token"
+}

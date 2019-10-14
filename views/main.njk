@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mainPageStyle.css">
+    <title>Main</title>
+</head>
+
+<body>
+  
+    {% include "_navbar.njk" %}
+    This is the main html.
+
+
+    <!-- Acknowledge Modal -->
+    <div class="modal fade" id="acknowledgementModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        data-backdrop=”static” aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="" id="exampleModalLabel">Welcome to Emergency Social Network！
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <p style="font-weight:bold">Acknowledgement about how to share your status:</p>
+                    When you elect to share your status, a set of statuses(listed as below) will be
+                    proposed to be selected from.<br /><br />                  
+                    <img src="./images/OK.png" alt="Avatar" class="avatar"><span><strong style="font-size: 20px"> OK:</strong> I am OK, I do not need help.</span><br/><br/>
+                    <img src="./images/Help.png" alt="Avatar" class="avatar"><span><strong style="font-size: 20px"> Help:</strong> I need help, but this is not a life threatening emergency.</span><br /><br/>
+                    <img src="./images/Emergency.png" alt="Avatar" class="avatar"><strong style="font-size: 20px"> Emergency:</strong> I need help now, as this is a life threatening emergency!<br /><br/>
+                    <img src="./images/Undefined.png" alt="Avatar" class="avatar"><strong style="font-size: 20px"> Undefined:</strong> The user has not been providing her status yet.<br />
+                </div>
+
+                <div class="modal-footer">
+                    <p>I understand the provided acknowledgement.
+                        <input class="check" id="check" type="checkbox" value=""></p>
+                        <button type="button" id="no" class="btn btn-secondary btn-small">Cancel</button>
+                        <button type="button" id="yes" class="btn btn-primary btn-small">Proceed</button>                                             
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/client.js"></script>
+
+    {% include "_js.njk" %}  
+</body>
+
+</html>
