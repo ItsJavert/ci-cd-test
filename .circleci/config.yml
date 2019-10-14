@@ -17,10 +17,16 @@ jobs: # a collection of steps
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
             - ./node_modules
+  deploy:
+    docker:
+      - image: circleci/node:9.9.0
+    steps:
+      - checkout
       - run:
           name: Deploy Master to Heroku
-          command: |
+          command: 
             git push https://git.heroku.com/ci-cd-test-24601.git master
+
 workflows:
   version: 2
   build-deploy:
@@ -32,4 +38,3 @@ workflows:
           filters:
             branches:
               only: master
-              
